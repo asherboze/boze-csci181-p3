@@ -1,0 +1,40 @@
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+#hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hidden-nav-popup{
+    position: absolute;
+    left: -100px;
+    top: 0;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+.hidden-nav-popup.show {
+    left: 0;
+}
+
+.hidden-nav-popup.hide {
+  left: -100px;
+}
