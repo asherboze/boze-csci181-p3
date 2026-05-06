@@ -3,9 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>project-3</title>
-    <script src="./script/script.js" defer></script>
+    <title>Project 2</title>
+    <script src="./script/projects.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-grid">
+          <article>
+            <button class="project-card-button">
+              <h3>Coded School Website</h3>
+              <p>Redid a website for an assignment.</p>
+            </button>
+          </article>
+          <article>
+            <button class="project-card-button">
+              <h3>Project Yet To Be Done</h3>
+              <p>This project is yet to be done, but it will be...</p>
+            </button>
+          </article>
+          <article>
+            <button class="project-card-button">
+              <h3>Portfolio Website</h3>
+              <p>I coded my own portfolio.</p>
+            </button>
+          </article>
+          <article>
+            <button class="project-card-button">
+              <h3>Leavetaking</h3>
+              <p>
+                I composed and performed a song for my High School Graduation.
+              </p>
+            </button>
+          </article>
+          <article>
+            <button class="project-card-button">
+              <h3>Lights On The Mountain</h3>
+              <p>A recent composition of mine.</p>
+            </button>
+          </article>
+          <article>
+            <button class="project-card-button">
+              <h3>In The Times Of Dinosaurs and Vinyl</h3>
+              <p>This is a live set that was recorded.</p>
+            </button>
+          </article>
+        </div>
+        <div class="hidden-modal">
+          <div class="modal-content">
+            <button class="undo">x</button>
+            <p id="ogMessage">Yeth I am a modal and I was hidden!</p>
+          </div>
+        </div>
+      </section>
+      <div class="modal"></div>
+
+      <div class="hidden-nav-popup">
+        <button id="close-nav">X</button>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="button">
+        <button id="nav-toggle">>>Navigation</button>
+      </div>
+    </main>
+  </body>
 </html>
