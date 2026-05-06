@@ -8,21 +8,19 @@
     <script src="./script/script.js" defer></script>
   </head>
   <body>
-    <main>
-      <header>
-        <img
-          id="hero-image"
-          src="./images/headshot-left-to-right.jpg"
-          alt="Headshot of Asher Boze"
-        />
-        <h1>Hello! My name is</h1>
-        <h2>Asher</h2>
-        <h3>Boze</h3>
-        <a href="projects.html" id="call-to-action"
-          >Click here to see my work!</a
-        >
-      </header>
-
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+      <img
+        id="hero-image"
+        src="./images/headshot-left-to-right.jpg"
+        alt="Headshot of Asher Boze"
+      />
+      <h1>Hello! My name is</h1>
+      <h2>Asher</h2>
+      <h3>Boze</h3>
+      <a href="projects.html" id="call-to-action">Click here to see my work!</a>
+    </header>
+    <main id="main-content">
       <section id="about-me">
         <h3>About Me</h3>
         <p>
@@ -52,7 +50,7 @@
 
       <div class="hidden-nav-popup">
         <button id="close-nav">X</button>
-        <ul>
+        <ul aria-label="Main navigation">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="resume.html">Resume</a></li>

@@ -89,7 +89,7 @@ header:has(#hero-image) h3 {
     height: 150px;
     left: -200px;
     border-radius: 5px;
-    top: 0px;
+    top: 20px;
     padding: 10px;
     background: rgb(33, 25, 23);
     border: 2px solid rgb(222, 230, 232);
@@ -120,28 +120,6 @@ header:has(#hero-image) h3 {
 
 
 
-nav a {
-  position: relative;
-}
-  
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  margin-top: 4px;
-  background: #3498db; /* whatever color you want */
-  transition: width 300ms ease-out; /* transitions only the width property */
-}
-
-nav a:hover::after {
-  width: 100%; /* expands the custom underline */
-}
-
-
-
-
 
 
 #call-to-action {
@@ -167,7 +145,7 @@ nav a:hover::after {
   margin-top: 4px;
   background: rgb(222, 230, 232);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  transition: width 300ms ease-out; /* transitions only the width property */
+  transition: width 300ms ease-out;
 }
 
 #call-to-action:hover::after {
@@ -293,4 +271,93 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.skip-link {
+  text-decoration: none;
+  color: white;
+  font-family: inherit;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+  font-size: 16px;
+}
+
+  body h1 { font-size: 2.5rem; }
+  body h2 { font-size: 2rem; }
+  body h3 { font-size: 1.5rem; }
+  body h4 { font-size: 1.2rem; }
+  body h5 { font-size: 1rem; }
+
+  header:has(#hero-image) h1,
+  header:has(#hero-image) h2,
+  header:has(#hero-image) h3 {
+
+    font-size: 2rem; 
+    position: static; 
+
+    text-align: center;
+    right: auto
+    top: auto;
+    transform: none;
+    margin: 10px 0; 
+}
+
+  call-to-action {
+    font-size: 1.2rem;
+    position: static; 
+    text-align: center;
+
+    right: auto;
+    top: auto;
+    transform: none;
+    margin-bottom: 20px;
+}
+
+  projects-grid {
+    grid-template-columns: 1fr; 
+}
+
+  .project-card-button {
+    width: 90%;
+    margin: 10px auto; 
+
+
+
+  .hidden-nav-popup {
+      width: 90%; 
+      left: -100%; 
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  body h1 { font-size: 3rem; }
+  body h2 { font-size: 2.5rem; }
+  body h3 { font-size: 2rem; }
+
+  header:has(#hero-image) h1,
+  header:has(#hero-image) h2,
+  header:has(#hero-image) h3 {
+    font-size: 3rem;
+  }
+
+  #call-to-action {
+    font-size: 1.5rem;
+  }
+
+
+  #projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card-button {
+    width: 250px; 
+  }
+}
 }
